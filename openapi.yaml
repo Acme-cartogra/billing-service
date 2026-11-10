@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "billing-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8110"
+paths:
+  "/billings":
+    get:
+      summary: "List billings"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create billing"
+      responses:
+        "200":
+          description: OK
+  "/billings/{id}":
+    get:
+      summary: "Get billing by ID"
+      responses:
+        "200":
+          description: OK

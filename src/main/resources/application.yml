@@ -1,0 +1,7 @@
+server:
+  port: 8110
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
